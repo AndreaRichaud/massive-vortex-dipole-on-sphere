@@ -1,0 +1,17 @@
+# macOS metadata
+.DS_Store
+._*
+__MACOSX/
+
+# Generated simulation output
+output/*
+!output/.gitkeep
+Sweep_Nb/
+Sweep_theta_initial/
+Sweep_g_residual/
+
+# MATLAB generated files
+*.asv
+*.autosave
+slprj/
+codegen/
