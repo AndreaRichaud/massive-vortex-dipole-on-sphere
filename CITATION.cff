@@ -1,0 +1,13 @@
+cff-version: 1.2.0
+message: "If you use this software, please cite it using the metadata below."
+title: "Massive vortex dipole on a spherical superfluid shell"
+type: software
+authors:
+  - family-names: "Richaud"
+    given-names: "Andrea"
+  - family-names: "Sorba"
+    given-names: "Marianna"
+repository-code: "https://github.com/AndreaRichaud/massive-vortex-dipole-on-sphere"
+version: 1.0.0
+date-released: 2026-07-14
+license: GPL-3.0-only
