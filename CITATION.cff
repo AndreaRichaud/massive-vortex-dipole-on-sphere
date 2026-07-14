@@ -8,6 +8,7 @@ authors:
   - family-names: "Sorba"
     given-names: "Marianna"
 repository-code: "https://github.com/AndreaRichaud/massive-vortex-dipole-on-sphere"
+doi: "10.5281/zenodo.21351319"
 version: 1.0.0
 date-released: 2026-07-14
 license: GPL-3.0-only

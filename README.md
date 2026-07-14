@@ -1,5 +1,7 @@
 # Massive vortex dipole on a spherical superfluid shell
 
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.21351319.svg)](https://doi.org/10.5281/zenodo.21351319)
+
 MATLAB code for the preparation, real-time Gross–Pitaevskii evolution, and post-processing of a massive vortex dipole on a spherical superfluid shell.
 
 The code was developed for the numerical simulations of massive vortex dynamics reported in:
@@ -238,7 +240,9 @@ If you use this code in published work, please cite the associated publication:
 
 > M. Sorba and A. Richaud, *A magnetic monopole in a superfluid bubble* (2026).
 
-Please also cite the archived software release when referring specifically to the numerical implementation or to a particular version of the code. The software DOI will be added after archival of the corresponding release.
+Please also cite the archived software release when referring specifically to the numerical implementation or to a particular version of the code:
+
+> A. Richaud and M. Sorba, *Massive vortex dipole on a spherical superfluid shell*, version 1.0.0 (2026). DOI: 10.5281/zenodo.21351319.
 
 Since this code uses SSHT for spherical harmonic transforms, users should also follow the referencing instructions provided by the SSHT developers and cite the relevant SSHT papers listed above.
 
