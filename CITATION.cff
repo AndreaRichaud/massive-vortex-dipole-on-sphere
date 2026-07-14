@@ -1,5 +1,5 @@
 cff-version: 1.2.0
-message: "If you use this software, please cite it using the metadata below."
+message: "If you use this code in published work, please cite the associated publication listed below."
 title: "Massive vortex dipole on a spherical superfluid shell"
 type: software
 authors:
@@ -11,3 +11,13 @@ repository-code: "https://github.com/AndreaRichaud/massive-vortex-dipole-on-sphe
 version: 1.0.0
 date-released: 2026-07-14
 license: GPL-3.0-only
+
+preferred-citation:
+  type: article
+  authors:
+    - family-names: "Sorba"
+      given-names: "Marianna"
+    - family-names: "Richaud"
+      given-names: "Andrea"
+  title: "A magnetic monopole in a superfluid bubble"
+  year: 2026

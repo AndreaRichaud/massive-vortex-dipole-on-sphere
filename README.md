@@ -234,13 +234,11 @@ Video-generation scripts read the JPEG frames stored in the `Temp_real` director
 
 ## Citation
 
-If this code contributes to published work, please cite the associated publication and the archived software release.
-
-Associated publication:
+If you use this code in published work, please cite the associated publication:
 
 > M. Sorba and A. Richaud, *A magnetic monopole in a superfluid bubble* (2026).
 
-The DOI and complete software citation will be added after archival of the corresponding software release.
+Please also cite the archived software release when referring specifically to the numerical implementation or to a particular version of the code. The software DOI will be added after archival of the corresponding release.
 
 Since this code uses SSHT for spherical harmonic transforms, users should also follow the referencing instructions provided by the SSHT developers and cite the relevant SSHT papers listed above.
 
