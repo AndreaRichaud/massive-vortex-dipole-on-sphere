@@ -724,48 +724,6 @@ end
 fprintf('=========================================================\n\n');
 
 %% =========================================================
-% Plot extracted omega vs N_b
-%% =========================================================
-% valid_num             = isfinite(omega_fit);
-% valid_an_branch_Mb    = isfinite(omega_analytic_branch_Mb);
-% valid_an_branch_MbMex = isfinite(omega_analytic_branch_Mb_plusMex);
-% 
-% fig_omega = figure('Position', [100 100 900 650], 'Color', 'w');
-% hold on
-% grid on
-% box on
-% 
-% plot(N_b_values(valid_num), omega_fit(valid_num), 'o-', ...
-%     'LineWidth', 1.8, 'MarkerSize', 7)
-% 
-% plot(N_b_values(valid_an_branch_Mb), omega_analytic_branch_Mb(valid_an_branch_Mb), '--', ...
-%     'LineWidth', 2.0)
-% 
-% plot(N_b_values(valid_an_branch_MbMex), omega_analytic_branch_Mb_plusMex(valid_an_branch_MbMex), '-.', ...
-%     'LineWidth', 2.0)
-% 
-% xlabel('$N_b$', 'Interpreter', 'latex', 'FontSize', 16)
-% ylabel('$\omega$ [rad/s]', 'Interpreter', 'latex', 'FontSize', 16)
-% title('Angular frequency extracted from sinusoidal fits of $\gamma(t)$', ...
-%     'Interpreter', 'latex', 'FontSize', 18)
-% 
-% leg_Mb = 'Analytical branch ($M_b$)';
-% leg_MbMex = 'Analytical branch ($M_b + M_{\mathrm{ex}}$)';
-% 
-% if isfinite(branchIndex_Mb)
-%     leg_Mb = sprintf('Ordered-spectrum branch %d ($M_b$)', branchIndex_Mb);
-% end
-% if isfinite(branchIndex_Mb_plusMex)
-%     leg_MbMex = sprintf('Ordered-spectrum branch %d ($M_b + M_{\\mathrm{ex}}$)', branchIndex_Mb_plusMex);
-% end
-% 
-% legend({'Numerical fit', leg_Mb, leg_MbMex}, ...
-%     'Interpreter', 'latex', 'FontSize', 14, 'Location', 'best')
-% 
-% set(gca, 'TickLabelInterpreter', 'latex', 'FontSize', 14)
-% xlim([0, inf])
-
-%% =========================================================
 % Convert cell spectra to matrices for Fig. 8-style plotting
 %% =========================================================
 nEig_Mb = 0;
@@ -812,10 +770,6 @@ for j = 1:size(imagEig_all_Mb,1)
     plot(N_b_values, imagEig_all_Mb(j,:), '-', 'LineWidth', 1.2);
 end
 
-% if isfinite(branchIndex_Mb) && branchIndex_Mb <= size(imagEig_all_Mb,1)
-%     plot(N_b_values, imagEig_all_Mb(branchIndex_Mb,:), 'k--', 'LineWidth', 2.5);
-% end
-
 xlabel('$N_b$', 'Interpreter', 'latex', 'FontSize', 16)
 ylabel('${\rm Im}(\lambda)$ [rad/s]', 'Interpreter', 'latex', 'FontSize', 16)
 title('$M_b$', 'Interpreter', 'latex', 'FontSize', 17)
@@ -833,10 +787,6 @@ box on
 for j = 1:size(imagEig_all_Mb_plusMex,1)
     plot(N_b_values, imagEig_all_Mb_plusMex(j,:), '-', 'LineWidth', 1.2);
 end
-
-% if isfinite(branchIndex_Mb_plusMex) && branchIndex_Mb_plusMex <= size(imagEig_all_Mb_plusMex,1)
-%     plot(N_b_values, imagEig_all_Mb_plusMex(branchIndex_Mb_plusMex,:), 'k--', 'LineWidth', 2.5);
-% end
 
 xlabel('$N_b$', 'Interpreter', 'latex', 'FontSize', 16)
 ylabel('${\rm Im}(\lambda)$ [rad/s]', 'Interpreter', 'latex', 'FontSize', 16)

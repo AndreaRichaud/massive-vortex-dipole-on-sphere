@@ -50,7 +50,7 @@ function Compute_ground_state_on_sphere_given_theta(N_b, theta_1, output_folder)
 
     try
         fprintf('============================================================\n');
-        fprintf('Compute_ground_state_on_sphere started\n');
+        fprintf('Compute_ground_state_on_sphere_given_theta started\n');
         fprintf('N_b = %d\n', N_b);
         fprintf('Output folder: %s\n', output_folder);
         fprintf('Start time: %s\n', datestr(now));
@@ -163,7 +163,7 @@ function Compute_ground_state_on_sphere_given_theta(N_b, theta_1, output_folder)
             if i == 1 || mod(i, sample_frequency) == 0
 
                 elapsed_time = toc(t_start);
-                fprintf('Avanzamento = %.2f %% in %.0f s\n', ...
+                fprintf('Progress = %.2f %% in %.0f s\n', ...
                     100*i/n_iterations, elapsed_time);
 
                 vec_mu_a(i_sampling) = real(sum(conj(psi_a(:)) .* Hpsi_a(:) .* geom.W(:)));
@@ -272,12 +272,12 @@ function Compute_ground_state_on_sphere_given_theta(N_b, theta_1, output_folder)
             'sample_frequency');
 
         fprintf('Saved MAT file: %s\n', output_mat_file);
-        fprintf('Compute_ground_state_on_sphere completed successfully in %.2f s.\n', toc(t_start));
+        fprintf('Compute_ground_state_on_sphere_given_theta completed successfully in %.2f s.\n', toc(t_start));
 
         diary off;
 
     catch ME
-        fprintf('\nERROR in Compute_ground_state_on_sphere\n');
+        fprintf('\nERROR in Compute_ground_state_on_sphere_given_theta\n');
         fprintf('%s\n', getReport(ME, 'extended', 'hyperlinks', 'off'));
         diary off;
         rethrow(ME);

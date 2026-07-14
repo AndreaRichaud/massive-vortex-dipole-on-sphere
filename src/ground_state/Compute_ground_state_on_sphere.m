@@ -161,7 +161,7 @@ function Compute_ground_state_on_sphere(N_b, output_folder)
             if i == 1 || mod(i, sample_frequency) == 0
 
                 elapsed_time = toc(t_start);
-                fprintf('Avanzamento = %.2f %% in %.0f s\n', ...
+                fprintf('Progress = %.2f %% in %.0f s\n', ...
                     100*i/n_iterations, elapsed_time);
 
                 vec_mu_a(i_sampling) = real(sum(conj(psi_a(:)) .* Hpsi_a(:) .* geom.W(:)));
