@@ -242,13 +242,13 @@ If you use this code in published work, please cite the associated publication:
 
 Please also cite the archived software release when referring specifically to the numerical implementation or to a particular version of the code:
 
-> A. Richaud and M. Sorba, *Massive vortex dipole on a spherical superfluid shell*, version 1.0.0 (2026). DOI: 10.5281/zenodo.21351319.
+> A. Richaud and M. Sorba, *Massive vortex dipole on a spherical superfluid shell*, version 1.0.0 (2026). [https://doi.org/10.5281/zenodo.21351319](https://doi.org/10.5281/zenodo.21351319).
 
 Since this code uses SSHT for spherical harmonic transforms, users should also follow the referencing instructions provided by the SSHT developers and cite the relevant SSHT papers listed above.
 
 ## License
 
-The license applying to the original code in this repository is specified in the `LICENSE` file.
+The code in this repository is distributed under the GNU General Public License v3.0. See the `LICENSE` file for details.
 
 SSHT is an external software dependency and is not included in this repository. SSHT is distributed separately under the GPL-3.0 license.
 
