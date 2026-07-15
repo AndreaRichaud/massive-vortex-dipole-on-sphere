@@ -252,6 +252,12 @@ The code in this repository is distributed under the GNU General Public License 
 
 SSHT is an external software dependency and is not included in this repository. SSHT is distributed separately under the GPL-3.0 license.
 
+## Related repository
+
+The single-component Gross–Pitaevskii simulations of equatorial vortex-necklace formation and Kelvin–Helmholtz-like instability reported in the same work are available in the companion repository:
+
+- [Superfluid Kelvin–Helmholtz instability on a spherical shell](https://github.com/AndreaRichaud/superfluid-kelvin-helmholtz-instability-on-sphere)
+
 ## Contact
 
 For questions concerning the simulations or numerical implementation, please contact:
