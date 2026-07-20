@@ -4,9 +4,12 @@
 
 MATLAB code for the preparation, real-time Gross–Pitaevskii evolution, and post-processing of a massive vortex dipole on a spherical superfluid shell.
 
-The code was developed for the numerical simulations of massive vortex dynamics reported in:
+The code was developed for the numerical simulations of massive-vortex dynamics reported in:
 
-> M. Sorba and A. Richaud, *A magnetic monopole in a superfluid bubble* (2026).
+> M. Sorba and A. Richaud,  
+> *A magnetic monopole in a superfluid bubble*,  
+> arXiv:2607.15093 (2026).  
+> [https://doi.org/10.48550/arXiv.2607.15093](https://doi.org/10.48550/arXiv.2607.15093)
 
 The simulations describe a two-component Bose–Einstein condensate confined to a spherical shell. Vortices are hosted by component *a*, while component *b* fills the vortex cores and provides an effective inertial mass to the vortex excitations. The dynamics are obtained by solving the coupled Gross–Pitaevskii equations on the sphere.
 
@@ -234,29 +237,35 @@ The real-time simulations can generate large MATLAB data files and many JPEG fra
 
 Video-generation scripts read the JPEG frames stored in the `Temp_real` directories and create MPEG-4 files. Simulation data are not modified by these scripts.
 
-## Citation
-
-If you use this code in published work, please cite the associated publication:
-
-> M. Sorba and A. Richaud, *A magnetic monopole in a superfluid bubble* (2026).
-
-Please also cite the archived software release when referring specifically to the numerical implementation or to a particular version of the code:
-
-> A. Richaud and M. Sorba, *Massive vortex dipole on a spherical superfluid shell*, version 1.0.0 (2026). [https://doi.org/10.5281/zenodo.21351319](https://doi.org/10.5281/zenodo.21351319).
-
-Since this code uses SSHT for spherical harmonic transforms, users should also follow the referencing instructions provided by the SSHT developers and cite the relevant SSHT papers listed above.
-
-## License
-
-The code in this repository is distributed under the GNU General Public License v3.0. See the `LICENSE` file for details.
-
-SSHT is an external software dependency and is not included in this repository. SSHT is distributed separately under the GPL-3.0 license.
-
 ## Related repository
 
 The single-component Gross–Pitaevskii simulations of equatorial vortex-necklace formation and Kelvin–Helmholtz-like instability reported in the same work are available in the companion repository:
 
 - [Superfluid Kelvin–Helmholtz instability on a spherical shell](https://github.com/AndreaRichaud/superfluid-kelvin-helmholtz-instability-on-sphere)
+
+## Citation
+
+If you use this software in published work, please cite the associated research article:
+
+> M. Sorba and A. Richaud,  
+> *A magnetic monopole in a superfluid bubble*,  
+> arXiv:2607.15093 (2026).  
+> [https://doi.org/10.48550/arXiv.2607.15093](https://doi.org/10.48550/arXiv.2607.15093)
+
+Please also cite the archived software release when referring specifically to the numerical implementation or to a particular version of the code:
+
+> A. Richaud and M. Sorba,  
+> *Massive vortex dipole on a spherical superfluid shell*,  
+> version 1.0.0, Zenodo (2026).  
+> [https://doi.org/10.5281/zenodo.21351319](https://doi.org/10.5281/zenodo.21351319)
+
+Since this software uses SSHT for spherical-harmonic transforms, users should also follow the referencing instructions provided by the SSHT developers and cite the relevant SSHT papers listed above.
+
+## License
+
+The original code in this repository is distributed under the GNU General Public License v3.0. See the `LICENSE` file for details.
+
+SSHT is an external software dependency and is not included in this repository. SSHT is distributed separately under the GPL-3.0 license.
 
 ## Contact
 
